@@ -70,9 +70,10 @@ export default {
           this.breakcountdown();
         }
         else if (this.second == 0 && this.minit == 0 && this.status == "i sleep") {
-          this.status="Woke"
+          clearInterval(countdowntimer)
           this.addcycle();
           this.countdown();
+          this.kickstart = true
         }
          else {
           --this.second;
