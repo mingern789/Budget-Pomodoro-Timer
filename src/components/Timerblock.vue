@@ -72,7 +72,7 @@ export default {
         else if (this.second == 0 && this.minit == 0 && this.status == "i sleep") {
           this.status="Woke"
           this.addcycle();
-          this.breakcountdown();
+          this.countdown();
         }
          else {
           --this.second;
@@ -80,17 +80,15 @@ export default {
       }, 1000);
     },
     breakcountdown(){
-      // if (this.kickstart == true) {
         this.clonesession = this.defaultbreak;
         this.minit = this.clonesession;
-        setTimeout(function () {
-          that.clonesession--;
-          this.minit = this.clonesession;
-          that.second = 59;
-        }, 1000);
-        // this.kickstart = true;
-      // }
-      let that = this;
+        // setTimeout(function () {
+        //   that.clonesession--;
+        //   that.second = 59;
+        // }, 1000);
+        
+      
+      // let that = this;
     },
     pause(){
       this.active = !this.active;
