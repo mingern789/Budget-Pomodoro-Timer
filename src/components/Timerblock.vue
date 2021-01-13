@@ -72,8 +72,9 @@ export default {
         else if (this.second == 0 && this.minit == 0 && this.status == "i sleep") {
           clearInterval(countdowntimer)
           this.addcycle();
+          this.kickstart = true;
           this.countdown();
-          this.kickstart = true
+          
         }
          else {
           --this.second;
