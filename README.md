@@ -1,5 +1,7 @@
 # pomodoro-timer
 
+Live on: https://mingern789.github.io/Budget-Pomodoro-Timer/
+
 ## Project setup
 ```
 npm install
